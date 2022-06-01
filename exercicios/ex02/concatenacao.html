@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo concatenação e ${}</title>
+</head>
+<body>
+    <h1>
+        Olá, Mundo!
+    </h1>
+    <p>To livre da maldição</p>
+    <script>
+       var n1 = Number(window.prompt('Digite um número: ')) 
+       // Aqui podemos usar Number() ou tambem Number.parseInt() ou NumberparseFloat() quando formos lidar com valores especificos inteiros ou reais
+       
+       var n2 = Number(window.prompt('Digite outro número: '))
+       var s = n1 + n2
+       /* window.alert('A soma dos valores é: ' + s) */
+       
+       /* aqui usamos o sinal + para concatenação */
+       /* usamos + para concatenação 
+        
+        (number) + (number) para adição
+        (string) + (string) para concatenação */
+       
+        window.alert(`a soma dos valores ${n1} e ${n2} é igual a ${s}`) // podemos usar ${} para representar os resultados sem concatenação 
+    </script>
+</body>
+</html>
