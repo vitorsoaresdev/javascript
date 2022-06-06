@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #fff;
+    --cor2: #383838;
+    --cor3: #ffa600;
+}
+
+body {
+    background-color: var(--cor3);
+    width: 500px;
+    margin: 4% auto;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    font-size: 1.8rem;
+}
+
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 2.6rem;
+    color: var(--cor1);
+}
+
+.calculadora {
+    padding: 20px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    background-color: var(--cor1);
+}
+
+.input {
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align-last: right;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+}
+
+.input:hover {
+    border: 1px solid #bbb;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.botoes{}
+
+.operadores{}
+
+.operadores div {
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 4px 10px 0;
+    cursor: pointer;
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+.operadores div:hover {
+    background-color: #383838;
+    box-shadow: 0px 1px 4px 0px rgba(131, 126, 126, 0.282);
+    border-color: #232323;
+}
+
+.operadores div:active {
+    font-weight: bold;
+}
+
+.painel {
+    display: inline-block;
+}
+
+.numeros div {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+.numeros div:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #bbb;
+}
+
+.numeros div:active {
+    font-weight: bold;
+}
+
+div.igual {
+    display: inline-block;
+    border: 1px solid #3079ED;
+    border-radius: 1px;
+    width: 17%;
+    text-align: center;
+    padding: 127px 10px;
+    margin: 10px 6px 10px 0;
+    vertical-align: top;
+    cursor: pointer;
+    color: var(--cor1);
+    background-color: #3663aa;
+}
+
+div.igual:hover {
+    background-color: #245fbe;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #134596;
+}
+
+div.igual:active {
+    font-weight: bold;
+}
